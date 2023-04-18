@@ -6,12 +6,13 @@
 }
 
 .container{
-    margin: 0 40px;
+    margin: 0 100px;
 }
 header{
-    background-image: url("../img/pic2.png");
-    background-size: cover;
-    height: 606px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .header__content{
     display: flex;
@@ -55,4 +56,107 @@ header{
 .header__content nav ul li a i{
     font-size: 15px;
     color: black;
+}
+
+
+
+
+.header__content nav ul li a span {
+    display: inline-block;
+  transition: all 1s;
+}
+.header__content nav ul li a:hover {
+  color: #f55f8d;
+}
+.header__content nav ul li a:hover i {
+    color: #f55f8d;
+  }
+.header__content nav ul li a:hover span{
+  animation: upToDown 0.3s;
+}
+/* Carousel */
+.carousel{
+    background-image: url("../img/pic2.png");
+    background-size: 100%;
+  background-position: top;
+  height: 100vh;
+}
+
+.carousel .carousel__content{
+    display: flex;
+    height: 100%;
+    padding-top: 150px;
+}
+.carousel .carousel__content .carousel__left{
+    width: 65%;
+}
+.carousel .carousel__content .carousel__left .title p{
+    font-size: 22px;
+    font-weight: 600;
+    color: #f55f8d;
+    padding-top: 100px;
+}
+.carousel .carousel__content .carousel__left .title h2{
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 70px;
+    margin: 30px 0;
+    color: #262626;
+}
+.carousel .carousel__content .carousel__left .content p{
+    font-size: 18px;
+    color: #636363;
+    margin-bottom: 20px;
+}
+.carousel .carousel__content .carousel__left .content ul{
+    line-height: 40px;
+}
+.carousel .carousel__content .carousel__left .content ul li{
+    list-style: none;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #636363;
+}
+.carousel .carousel__content .carousel__left .content ul li span{
+    padding: 10px;
+    color: white;
+    border-radius: 100%;
+    background: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    margin-right: 20px;
+}
+.carousel .carousel__content .carousel__left .content .btn__start{
+    text-align: center;
+    background: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    padding: 20px 35px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all 1s;
+    width: 25%;
+    margin-top: 20px;
+}
+.carousel .carousel__content .carousel__left .content .btn__start a{
+    text-decoration: none;
+    color: white;
+}
+.carousel .carousel__content .carousel__left .content .btn__start a:hover{
+    text-decoration: underline;
+}
+.carousel .carousel__content .carousel__right{
+    width: 35%;
+}
+
+@keyframes upToDown {
+  49% {
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  51% {
+    opacity: 1;
+  }
 }
