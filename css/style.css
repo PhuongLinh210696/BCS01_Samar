@@ -78,8 +78,9 @@ header{
 .carousel{
     background-image: url("../img/pic2.png");
     background-size: 100%;
-  background-position: top;
-  height: 100vh;
+    background-position: top;
+    height: 100vh;
+  /* overflow: hidden; */
 }
 
 .carousel .carousel__content{
@@ -148,6 +149,71 @@ header{
     width: 35%;
 }
 
+/* Service */
+.services{
+    background-image: url("../img/bg2.png");
+    /* height: 100vh; */
+    height: 500px;
+    background-size: 100%;
+    background-position: top;
+}
+.services .service__container .services__title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services .service__container .services__title p{
+    font-size: 22px;
+    font-weight: 600;
+    color: #f55f8d;
+    padding-top: 100px;
+}
+.services .service__container .services__title h2{
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 70px;
+    margin: 30px 0;
+    color: #262626;
+}
+.services .service__container .services__content{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+.services .service__container .services__content .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-top: 20px;
+    border-radius: 20px;
+    transform: translateY(0);
+    transition: all 0.5s;
+}
+.services .service__container .services__content .item .item__content{
+    text-align: center;
+    margin: 20px 0;
+}
+.services .service__container .services__content .item .item__content h3{
+    font-size: 24px;
+    padding: 20px 0;
+}
+.services .service__container .services__content .item .item__content p{
+    padding: 0 40px;
+    font-size: 16px;
+    color: #636363;
+    line-height: 30px;
+}
+.services .service__container .services__content .item img{
+    width: 50%;
+}
+.services .service__container .services__content .item:hover{
+    border-image: url("../img/br.png") 2 round;
+    border-style: dashed;
+    transform: translateY(-15px);
+}
 @keyframes upToDown {
   49% {
     transform: translateY(100%);
@@ -160,3 +226,4 @@ header{
     opacity: 1;
   }
 }
+
