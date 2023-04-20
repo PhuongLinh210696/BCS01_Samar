@@ -25,6 +25,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
+    <!-- FancyBox -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+/>
     <!-- Style Css -->
     <link rel="stylesheet" href="./css/style.css" />
     <title>Samar</title>
@@ -285,83 +291,89 @@
             <h3>Our Latest Work</h3>
           </div>
           <div class="content">
-            <div class="porfolio__item">
-              <div class="porfolio__overlay">
+            <div class="item">
+              <div class="porfolio__item__overlay">
                 <div class="overlay__icon">
-                  <a href=""><i class="fa-solid fa-plus"></i></a>
+                  <a href="./img/pic1_2.jpg" data-fancybox="metro-1" data-caption="Design 1">
+                    <i class="fa-solid fa-plus"></i>
+                  </a>
                 </div>
                 <div class="overlay__content">
-                  <h3>
-                    Software Landing</h3>
-                    <p>By Jhone Doe</p>
+                  <h3>Software Landing</h3>
+                  <p>By Jhone Doe</p>
                 </div>
-                <img src="./img/pic1_2.jpg" alt="">
               </div>
+              <img src="./img/pic1_2.jpg" alt="">
             </div>
-            <div class="porfolio__item">
-              <div class="porfolio__overlay">
+            <div class="item">
+              <div class="porfolio__item__overlay">
                 <div class="overlay__icon">
-                  <a href=""><i class="fa-solid fa-plus"></i></a>
+                  <a href="./img/pic2_1.jpg" data-fancybox="metro-1" data-caption="Design 2">
+                    <i class="fa-solid fa-plus"></i>
+                  </a>
                 </div>
                 <div class="overlay__content">
-                  <h3>
-                    Software Landing</h3>
-                    <p>By Jhone Doe</p>
+                  <h3>Software Landing</h3>
+                  <p>By Jhone Doe</p>
                 </div>
-                <img src="./img/pic2_1.jpg" alt="">
               </div>
+              <img src="./img/pic2_1.jpg" alt="">
             </div>
-            <div class="porfolio__item">
-              <div class="porfolio__overlay">
+            <div class="item">
+              <div class="porfolio__item__overlay">
                 <div class="overlay__icon">
-                  <a href=""><i class="fa-solid fa-plus"></i></a>
+                  <a href="./img/pic3_1.jpg" data-fancybox="metro-1" data-caption="Design 3">
+                    <i class="fa-solid fa-plus"></i>
+                  </a>
                 </div>
                 <div class="overlay__content">
-                  <h3>
-                    Software Landing</h3>
-                    <p>By Jhone Doe</p>
+                  <h3>Software Landing</h3>
+                  <p>By Jhone Doe</p>
                 </div>
-                <img src="./img/pic3_1.jpg" alt="">
               </div>
+              <img src="./img/pic3_1.jpg" alt="">
             </div>
-            <div class="porfolio__item">
-              <div class="porfolio__overlay">
+            <div class="item">
+              <div class="porfolio__item__overlay">
                 <div class="overlay__icon">
-                  <a href=""><i class="fa-solid fa-plus"></i></a>
+                  <a href="./img/pic4.jpg" data-fancybox="metro-1" data-caption="Design 4">
+                    <i class="fa-solid fa-plus"></i>
+                  </a>
                 </div>
                 <div class="overlay__content">
-                  <h3>
-                    Software Landing</h3>
-                    <p>By Jhone Doe</p>
+                  <h3>Software Landing</h3>
+                  <p>By Jhone Doe</p>
                 </div>
-                <img src="./img/pic4.jpg" alt="">
               </div>
+              <img src="./img/pic4.jpg" alt="">
             </div>
-            <div class="porfolio__item">
-              <div class="porfolio__overlay">
+            <div class="item">
+              <div class="porfolio__item__overlay">
                 <div class="overlay__icon">
-                  <a href=""><i class="fa-solid fa-plus"></i></a>
+                  <a href="./img/pic6.jpg" data-fancybox="metro-1" data-caption="Design 5">
+                    <i class="fa-solid fa-plus"></i>
+                  </a>
                 </div>
                 <div class="overlay__content">
-                  <h3>
-                    Software Landing</h3>
-                    <p>By Jhone Doe</p>
+                  <h3>Software Landing</h3>
+                  <p>By Jhone Doe</p>
                 </div>
-                <img src="./img/pic6.jpg" alt="">
               </div>
+              <img src="./img/pic6.jpg" alt="">
             </div>
-            <div class="porfolio__item">
-              <div class="porfolio__overlay">
+            <div class="item">
+              <div class="porfolio__item__overlay">
                 <div class="overlay__icon">
-                  <a href=""><i class="fa-solid fa-plus"></i></a>
+                  <a href="./img/pic5.jpg" data-fancybox="metro-1" data-caption="Design 6 ">
+                    <i class="fa-solid fa-plus"></i>
+                  </a>
                 </div>
                 <div class="overlay__content">
-                  <h3>
-                    Software Landing</h3>
-                    <p>By Jhone Doe</p>
+                  <h3>Software Landing</h3>
+                  <p>By Jhone Doe</p>
                 </div>
-                <img src="./img/pic5.jpg" alt="">
               </div>
+              <img src="./img/pic5.jpg" alt="">
             </div>
           </div>
         </div>
@@ -388,11 +400,18 @@
     <script src="./js/backtotop/main.js"></script>
     <!-- Count Up -->
     <script src="./js/countup/jquery.countup.min.js"></script>
+    <!-- FancyBox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script>
       $(".counter").countUp({
         time: 2000,
         delay: 10,
       });
+    </script>
+    <script>
+      Fancybox.bind("[data-fancybox]", {
+  // Your custom options
+});
     </script>
   </body>
 </html>
