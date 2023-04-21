@@ -329,10 +329,12 @@ header{
     background-size: 150%;
     width: 80px;
     height: 80px;
+    line-height: 80px;
     color: #fff;
+    display: inline-block;
     border-radius: 50%;
-    padding: 20px 0px;
     margin-bottom: 20px ;
+    
 }
 .numbers .numbers__content .item p{
     font-size: 65px;
@@ -823,9 +825,9 @@ footer .copyright .copyright__right a:hover {
 } */
 /* Back to top */
 .cd-top {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
     border-radius: 4px;
     text-align: center;
     background: #f55f8d;
@@ -856,6 +858,7 @@ footer .copyright .copyright__right a:hover {
     background-color: var(--cd-color-3);
     opacity: 1;
   }
+  
 @keyframes upToDown {
   49% {
     transform: translateY(100%);
